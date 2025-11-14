@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      background-color: lightgray;
+            vertical-align: top;
+
+    }
+    h1{
+      text-align: center;
+      color: darkgreen;
+    }
+    table{
+      border-collapse: collapse;
+      width: 500px;
+      margin: 30px;
+
+    }
+    td{
+      padding: 40px, 0;
+      border: 1px solid black;
+    }
+    th{
+      text-align: left;
+      color: red;
+
+    }
+    #chek{
+      color: black;
+      font-size: small;
+      text-align: center;
+
+    }
+  </style>
+</head>
+<body>
+    <!-- 문제1 -->
+     <h1>상품 주문서</h1>
+   <table>
+    <thead>
+      <tr>
+        <th>개인 정보</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">
+        이름  <input type="text" placeholder="필수"><br>
+        연락처 <input type="text" placeholder="필수"><br>
+        주소  <input type="text" placeholder="필수"><br>
+        </td>
+      </tr>  
+    </tbody>
+    <br>
+    <thead>
+      <tr>
+        <th>배송지 정보</th>
+      </tr>
+      <tr>
+        <th id="chek"><input type="checkbox" name="order" value="주문">주문자 정보와 같음</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">
+        이름 <input type="text" placeholder="필수"><br>
+        연락처 <input type="text" placeholder="필수"><br>
+        주소 <input type="text" placeholder="필수"><br>
+        메모 <textarea cols="50" rows="4"
+          placeholder="경비실에 맡겨주세요. 2층에 맞겨주세요"
+          style="resize: none;"></textarea>
+        </td>
+    </tbody>
+  </table>
+    <form action="#" method="get">
+      <button type="button">주문하기</button>
+      <button type="button">다시작성</button>
+    </form>
+</body>
+</html>
